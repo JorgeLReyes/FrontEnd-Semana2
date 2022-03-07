@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pasteleria</title>
+		<link rel="icon" href="logo.ico">
+	</head>
+
+	<body>
+		<header>
+			<h1><img src="logo.png" width="100px" title="Logo de pasteleria"></h1>
+			<nav>
+				<ul>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="pasteleriaInicioSesion.html">Inicia sesión</a></li>
+
+				</ul>
+			</nav>
+		</header>
+		
+		<form>
+
+		<h2>¡Crea tu propio pastel!</h2>
+
+		<label for="personas">Numero de personas</label><br>
+		<select id="personas" name="personas">
+			<option value="20 personas">20 personas (+$400)</option>
+			<option value="30 personas">30 personas (+$700)</option>
+			<option value="40 personas">40 personas (+$1000)</option>
+			<option value="50 personas">50 personas (+$1200)</option>
+			<option value="70 personas">70 personas (+$1500)</option>
+			<option value="90 personas">90 personas (+$2000)</option>
+		</select><br><br>
+
+		<label for="Sabores">Sabor de torta</label><br>
+		<select id="Sabores" name="Sabores" required>
+			<option value=""></option>
+			<option value="Vainilla">Vainilla (+$50)</option>
+			<option value="Chocolate">Chocolate (+$50)</option>
+			<option value="Red Velvet">Red Velvet (+$100)</option>
+			<option value="Fresa">Fresa (+$70)</option>
+			<option value="Mocca">Mocca (+$70)</option>
+			<option value="Limon">Limon (+$50)</option>
+		</select><br><br>
+
+		<label for="Sabores2">Sabor extra (opcional)</label><br>
+		<select id="Sabores2" name="Sabores2">
+			<option value=""></option>
+			<option value="Vainilla2">Vainilla (+$50)</option>
+			<option value="Chocolate2">Chocolate (+$50)</option>
+			<option value="Red Velvet2">Red Velvet (+$100)</option>
+			<option value="Fresa2">Fresa (+$70)</option>
+			<option value="Mocca2">Mocca (+$70)</option>
+			<option value="Limon2">Limon (+$50)</option>
+		</select><br><br>
+
+		<label for="Relleno">Relleno</label><br>
+			<select id="Relleno" name="Relleno" required>
+			<option value=""></option>
+			<option value="Chocolate">Chocolate (+$60)</option>
+			<option value="Arándanos">Arándanos (+$70)</option>
+			<option value="Piña">Piña (+$50)</option>
+			<option value="Dulce de leche">Dulce de leche (+$60)</option>
+			<option value="QUeso crema">Queso crema (+$60)</option>
+			<option value="Durazno">Durazno (+$70)</option>
+		</select><br><br>
+
+		<label for="Cobertura">Cobertura del pastel</label><br>
+		<input type="radio" id="Fondant" name="Cobertura"><label for="Fondat">Fondant.................$400</label><br>
+		<input type="radio" id="Chantilly" name="Cobertura"><label for="Chantilly">Chantilly................$350</label><br>
+		<input type="radio" id="Glaseado" name="Cobertura"><label for="Glaseado">Glaseado................$250</label><br>
+		<input type="radio" id="Queso crema" name="Cobertura"><label for="Queso crema">Queso crema..........$200</label><br><br>
+
+		<label>Adornos</label><br>
+		<input type="checkbox" id="Adorno1" name="Adorno1"><label for="Adorno1">Letrero $50 </label><input type="text" id="Letrero" name="Letrero" placeholder="Escriba la frase que desea que lleve" size="30" maxlength="20"><br>
+
+		<input type="checkbox" id="Adorno2" name="Adorno2"><label for="Adorno2">Frase (En el pastel) $20 </label><input type="text" id="Frase" name="Frase" placeholder="Escriba la frase que desea que lleve" size="30" maxlength="20"><br>
+
+		<input type="checkbox" id="Adorno3" name="Adorno3"><label for="Adorno3">Flores de merengue $70 </label><br>
+
+		<input type="checkbox" id="Adorno4" name="Adorno4"><label for="Adorno4">Personaje (Fondant) $200 c/u </label><input type="text" id="Personaje" name="Personaje" placeholder="Personaje(s) que desea" size="30">
+		<label for="cantidad"> Cantidad: </label><input type="number" id="cantidad" name="cantidad" min="1"><br>
+
+		<input type="checkbox" id="Adorno5" name="Adorno5"><label for="Adorno5">Imagenes decorativas $50 </label><input type="text" id="Estampa" name="Estampa" placeholder="Estampa que desea que lleve" size="30" maxlength="20"><br>
+
+		<input type="checkbox" id="Adorno6" name="Adorno6"><label for="Adorno6">Borde de merengue $50 </label><br><br>
+
+		<label for="primario">Color principal</label><br>
+		<input type="color" id = "primario" name="primario"><br><br>
+
+		<label for="secundario">Color secundario</label><br>
+		<input type="color" id = "secundario" name="secundario"><br><br>
+
+		<label for="archivo">Foto o imagen en caso de tener una idea de modelo</label><br>
+		<input accept="image/*" type="file" id="archivo" name="archivo"><br><br>
+		<label for="archivo2">Foto o imagen 2 (opcional)</label><br>
+		<input accept="image/*" type="file" id="archivo2" name="archivo2"><br><br>
+
+		<label for="area">Descripción del pastel</label><br>
+		<textarea maxlength="500" cols="40" rows="5" id="area" name=area></textarea><br><br>
+
+		<hr>
+
+		<h2>Datos para la entrega</h2>
+
+		<label for="nombre">Nombre completo</label><br>
+		<input type="text" id="nombre" name="nombre" size="30"><br>
+
+		<label for="telefono">Telefono</label><br>
+		<input type="tel" id="telefono" name="telefono" size="30"><br>
+
+		<label for="correo">Correo electrónico</label><br>
+		<input type="email" id="correo" name="correo" size="30"><br>
+
+		<label for="fecha">Fecha y hora de entrega deseada</label><br>
+		<input type="datetime-local" id="fecha" name="fecha"><br><br>
+
+		<hr>
+		<h2>Información de pago</h2>
+		<h4>Costo total: $1200</h4>
+		
+		<label for="pago">Método de pago</label><br>
+			<select id="pago" name="pago" required>
+			<option value="TD">Depósito</option>
+			<option value="TD">Tarjeta de débito</option>
+			<option value="TC">Tarjeta de crédito</option>
+			<option value="PP">Paypal</option>
+			<option value="OXXO">OXXO</option>
+			<option value="ELEVEN">ELEVEN</option>
+			<option value="MP">MercadoPago</option>
+		</select><br>
+
+		<p>Cuenta de banco: 123456789456132</p>
+		<p>1234 5678 9012 3456</p>
+		
+		<input type="button" name="Enviar" value="Confirmar" onclick="alert('¡Gracias por su compra!')">
+		
+		<br><p>*Nota: Primero debe <a href="pasteleriaInicioSesion.html">iniciar sesión</a> para poder realizar su compra</p>
+		</form>
+		<hr>
+		<h2>Información adicional</h2>
+		<p>Dirección.<br>
+		Av. San Jerónimo #82, La Otra Banda, Coyoacán<br>
+		Horario<br>
+		Lunes a Viernes de 10am a 5pm y Sábados entre 10am y 1pm.
+		<br>*Los domingos no tenemos entregas, pero se puede entregar el sábado, el pastel te aguanta perfectamente hasta 3 días en refrigeración.<br>
+		Teléfono<br>
+		55-74-71-00-01
+		</p>
+	</body>
+
+</html>
